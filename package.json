@@ -1,0 +1,104 @@
+{
+  "name": "jutgeextension",
+  "displayName": "JutgeExtension",
+  "version": "0.0.1",
+  "publisher": "alex",
+  "private": true,
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "jutge",
+          "title": "Jutge",
+          "icon": "media/dep.svg"
+        }
+      ]
+    },
+    "views": {
+      "jutge": [
+        {
+          "id": "jutgeTreeView",
+          "name": "Jutge",
+          "contextualTitle": "Jutge"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "title": "Enable CodeLens",
+        "command": "jutge.enableCodeLens",
+        "category": "CodeLens Sample"
+      },
+      {
+        "title": "Disable Codelens",
+        "command": "jutge.disableCodeLens",
+        "category": "CodeLens Sample"
+      },
+      {
+        "title": "Open Problem and View",
+        "command": "jutge.openProblemAndView",
+        "category": "Jutge"
+      },
+      {
+        "title": "Open Problem",
+        "command": "jutge.openProblemView",
+        "category": "Jutge"
+      },
+      {
+        "title": "Compile",
+        "command": "jutge.compileFile",
+        "category": "Jutge"
+      },
+      {
+        "title": "Run testcases",
+        "command": "jutge.runTestcase",
+        "category": "Jutge"
+      },
+      {
+        "title": "Run all problem testcases",
+        "command": "jutge.runProblemTestcases",
+        "category": "Jutge"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "jutge.enableCodeLens": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9"
+  },
+  "dependencies": {
+    "axios": "^1.3.3"
+  }
+}
