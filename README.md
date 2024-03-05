@@ -26,7 +26,7 @@
 - TreeView: A new icon should appear in the sidebar, onclick it will look for enrolled courses and allow to access its lists and problems. When clicking a problem it will create a file for the problem in the current folder and open the problem view. 
 
 
-https://github.com/alexstedev/ExtensionTest/assets/43722807/a028cc2b-44b6-4a44-aeac-abed5a7097d5
+https://github.com/alexstedev/ExtensionTest/assets/43722807/130b9470-8a38-4cf5-9d30-4e40c871caf2
 
 
 ## Features in progress (code might be present or not, depending on whether it was a fork on my original repo):
