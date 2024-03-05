@@ -25,8 +25,11 @@
 - Problem views: At the moment only shows the (unformatted) statement in HTML.
 - TreeView: A new icon should appear in the sidebar, onclick it will look for enrolled courses and allow to access its lists and problems. When clicking a problem it will create a file for the problem in the current folder and open the problem view. 
 
+https://github.com/alexstedev/ExtensionTest/blob/2de1ee6d98d1ec7df89373f3b2f5d575c1f3f4f4/media/video.mov
+
 ## Features in progress (code might be present or not, depending on whether it was a fork on my original repo):
 - Some kind of auth (at the time it did not make sense because users with credentials for the API are manually appointed).
 - "Compile and Run" for jutge problems, using VSCode API to compile and run the programs (so it is hopefully cross-compatible with other OSs).
 - Download and run testcases for jutge problems.
 - Dynamic webview to showcase the testcases and allow to interactively run and see results.
+
